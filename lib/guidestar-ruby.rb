@@ -7,7 +7,7 @@ require 'guidestar/client'
 
 module Guidestar
   VERSION = File.read(File.join(File.dirname(__FILE__), '..', 'VERSION'))
-  ENDPOINT = "https://gsservices.guidestar.org/GuideStar_SearchService/SearchService.asmx/GuideStarDetail"
+  ENDPOINT = "https://sandboxdata.guidestar.org/v1/advancedsearch"
 
   class GuidestarError < StandardError; end
   class InsufficientArgs < GuidestarError; end
